@@ -6,7 +6,7 @@ body {
     display: flex;
 }
 .box {
-    width: 50%;
+    width: 75%;
     background-color: #171717;
     color:rgb(255, 215, 252);
     font-family: 'Courier New', Courier, monospace;
@@ -14,7 +14,15 @@ body {
     padding: 5px;
 }
 .box:nth-child(even) {
+    height:fit-content;
+    width: 25%;
     display: grid;
+    padding-top:10px;
+    padding-bottom:10px;
+    a {
+        color:rgb(255, 215, 252);
+        text-decoration: none;
+    }
     h1 {
     text-align: right;
     padding: 5px;
@@ -25,9 +33,10 @@ body {
     transition: 0.1s ease-in-out;
     }
     h1:hover {
-        width:300px;
+        width:225px;
         text-align: left;
         background-color: #5b244b;
+        cursor: pointer;
     }
 }
 .icon {
